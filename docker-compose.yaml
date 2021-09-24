@@ -13,14 +13,14 @@ services:
     image: mysql:8
     restart: always
     environment:
-      MYSQL_DATABASE: codesample1
-      MYSQL_USER: max
-      MYSQL_PASSWORD: max
-      MYSQL_ROOT_PASSWORD: max
+      MYSQL_DATABASE: codesample
+      MYSQL_USER: maxwell
+      MYSQL_PASSWORD: maxwell
+      MYSQL_ROOT_PASSWORD: maxwell
     volumes:
       - ./storage/dbdata:/var/lib/mysql
     ports:
-      - :33066:3306
+      - :33060:3306
 
   redis:
     image: redis
